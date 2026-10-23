@@ -1,6 +1,5 @@
 public class Rider extends Person implements IRider {
 
-    private final int riderId; // not needed separately — id is inherited, see note below
     private String email;
     private String homeCity;
 
@@ -8,7 +7,6 @@ public class Rider extends Person implements IRider {
         super(id, name, phoneNumber);
         this.email = email;
         this.homeCity = homeCity;
-        this.riderId = id;
     }
 
     @Override

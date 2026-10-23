@@ -1,0 +1,21 @@
+VALIDATION RESULTS - 23 October 2026
+Compiler: Microsoft OpenJDK 21; compiled with --release 8.
+Compilation: PASS, no warnings under -Xlint:all,-options.
+Real-class integration suite: PASS (88 check call sites, including helper checks).
+Coverage: linked-list insert/traversal/remove, name/ID ordering, uniqueness,
+exact search, bulk removals, date/phone/plate validation, private/shared
+conflicts, touching intervals, cascade cleanup, CSV parsing and bad rows.
+Menu script: PASS; all 12 numbered options visited in the required order.
+Menu additions: rider, driver, private ride, shared ride accepted.
+Menu overlapping ride: rejected.
+Default startup paths and invalid menu input: PASS.
+Original interface files unchanged: PASS.
+No Java collection imports in application: PASS.
+Console input/output confined to Main: PASS.
+
+LIMITS
+The official 100-rider, 30-driver, and 40-ride CSV files were not supplied.
+Tests use the clearly marked synthetic sample-data files and temporary
+CSV cases. Official-data compatibility has not been verified.
+This does not certify an instructor grade; all teammates should rehearse
+the included guide and review their assigned code before submission.

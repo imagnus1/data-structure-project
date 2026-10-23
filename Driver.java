@@ -13,7 +13,7 @@ public class Driver extends Person implements IDriver {
     public String getVehiclePlate() { return vehiclePlate; }
 
     @Override
-    public void setVehiclePlate(String vehiclePlate) {
+    public final void setVehiclePlate(String vehiclePlate) {
         // 3 uppercase letters followed by 4 digits, e.g. ABC1234
         if (vehiclePlate == null || !vehiclePlate.matches("^[A-Z]{3}\\d{4}$")) {
             throw new IllegalArgumentException("Vehicle plate must be 3 uppercase letters followed by 4 digits.");

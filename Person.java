@@ -1,6 +1,6 @@
 public abstract class Person implements IPerson {
 
-    private int id;
+    private final int id;
     private String name;
     private String phoneNumber;
     private LinkedList<IRide> rideHistory;
@@ -25,7 +25,7 @@ public abstract class Person implements IPerson {
     public String getPhoneNumber() { return phoneNumber; }
 
     @Override
-    public void setPhoneNumber(String phoneNumber) {
+    public final void setPhoneNumber(String phoneNumber) {
         // Must be exactly 10 digits, numeric only
         if (phoneNumber == null || !phoneNumber.matches("^\\d{10}$")) {
             throw new IllegalArgumentException("Phone number must be exactly 10 digits.");
