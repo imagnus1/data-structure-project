@@ -1,0 +1,5 @@
+rideType,pickupLocation,pickupDateTime,dropoffDateTime,dropoffLocation,driverId,riderIds
+PRIVATE,University,10/24/2026 09:00,10/24/2026 10:00,Airport,10,1
+SHARED,Mall,10/24/2026 11:00,10/24/2026 12:00,University,20,2;3
+PRIVATE,Airport,10/24/2026 13:00,10/24/2026 14:00,Hotel,30,4
+SHARED,Mall,10/24/2026 14:00,10/24/2026 15:00,Station,40,1;5
